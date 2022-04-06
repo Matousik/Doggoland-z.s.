@@ -1,0 +1,61 @@
+.header {
+    background:linear-gradient(0deg, rgba(0, 0, 0, 0.5), rgba(51, 51, 51, 0.3)), url(../pics/jakpomoci-background.jpg);
+    min-height: 100vh;
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    margin-bottom: 3rem;
+}
+
+@media(max-width: 1300px){
+    .header {
+        background-position-x: 30%;
+    }
+
+    .logo {
+        display: none;
+    }
+
+    .titul {
+        margin-top: 40vh;
+    }
+}
+
+/* main */
+
+.pomocFlex {
+    display: flex;
+   
+    flex-wrap: wrap;
+    max-width: min(2000px,90%);
+    margin: 4rem auto;
+    gap: 20px;
+}
+
+.pomocBox p {
+    margin: 0;
+    max-width: 90%;
+}
+
+.pomocBox {
+    max-width: 380px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1rem;
+    margin: 0 auto;
+    background-color: rgb(233, 233, 233);
+    padding: 1rem 0;
+}
+
+.pomocBox h3 {
+    text-transform: uppercase;
+    text-align: center;
+    max-width: 90%;
+}
+
+.pomocBox i {
+    color: rgb(85, 85, 85);
+    font-size: 4rem;
+    margin-top: 1rem;
+}
