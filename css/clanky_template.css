@@ -1,0 +1,164 @@
+.header {
+    background:linear-gradient(120deg, rgba(192, 192, 192, 0.5), rgba(161, 105, 0, 0.3)), url(../pics/popynoid.jpg);
+    min-height: 60vh;
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    margin-bottom: 3rem;
+}
+
+@media(max-width: 1300px){
+    .header {
+        background-position-x: 30%;
+    }
+
+    .logo {
+        display: none;
+    }
+
+    .titul {
+        margin-top: 40vh;
+    }
+}
+
+h1 {
+    text-align: center;
+    font-weight: 500;
+    margin: 1rem 0;
+}
+
+h4 {
+    font-weight: 400;
+    text-align: center;
+    margin-bottom: 3rem;
+}
+/* clanky */
+
+main p {
+    max-width: min(1000px, 95%);
+}
+
+/* případy z praxe */
+
+.clanekTextBlok {
+    max-width: min(1000px, 95%);
+    margin: 2rem auto;
+}
+
+.clanekTextBlok h3 {
+    margin: 4rem 0;
+}
+
+.clanekTextBlok p {
+    margin: 1rem 0;
+}
+
+.container {
+    max-width: 1000px;
+    margin: 0 auto;
+}
+
+.clanekTextBlok ul{
+  margin-left: 1rem;
+}
+
+
+/* border */
+
+.separatorRight{
+    width:100%;
+    margin-bottom: -10vw;
+    z-index: 100;
+}
+
+.separatorRight:after{
+    content:'';
+    display:block;
+    border-right: 100vw solid rgb(255, 255, 255);
+    border-top: 1vw solid transparent;;
+    border-left:0;
+    border-bottom: 5vw solid transparent;
+    z-index: 100;
+}
+
+.separatorLeft{
+    width:100%;
+    margin-top: -10vw;
+}
+
+.separatorLeft:after{
+    content:'';
+    display:block;
+    border-left: 100vw solid rgb(255, 255, 255);
+    border-top: 5vw solid transparent;
+    border-right:0;
+    border-bottom: 1vw solid transparent;
+}
+
+/* images */
+
+.velkyObrazek {
+    max-width: min(900px,95%);
+}
+
+.stredniObrazek {
+    max-width: min(600px,95%);
+}
+
+.malyObrazek {
+    max-width: min(400px,95%);
+}
+
+/* interImg */
+
+.interImg {
+    max-height: 800px;
+    overflow: hidden;
+    z-index: -100;
+    margin: 5vw auto;
+    display: flex;
+    align-items: center;
+}
+
+.interImg img {
+    width: 100%;
+    position: sticky;
+    z-index: -100;    
+}
+
+.imgContainer {
+    text-align: center;
+}
+
+img {
+    max-height: 800px;
+    max-width: 100%;
+}
+
+/* img caption */ 
+
+.popisObrazku {
+    color: rgb(141, 141, 141);
+    font-size: clamp(13px, 4vw, 17px);
+    text-align: center;
+}
+
+/* ul and pics next to each other */
+
+.ulAObrazek {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    gap: 2rem;
+    margin: 2rem 0;
+}
+
+.ulAObrazek ul {
+    max-width: 600px;
+}
+
+.iridologieIris {
+    width: min(300px, 100%);
+}
+

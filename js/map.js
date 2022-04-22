@@ -6,13 +6,17 @@ function initMap() {
   
     map = new google.maps.Map(document.getElementById("map"), {
         center: LatLng,
-        zoom: 15,
+        zoom: 13,
         });
+
+    const image =
+        "./pics/logo_75px.png";
 
     var marker = new google.maps.Marker({
         position: LatLng,
         map,
         title: "Doggoland z.s.",
+        icon: image,
         });
     
         marker.setMap(map);

@@ -1,0 +1,48 @@
+.header {
+    background:linear-gradient(120deg, rgba(192, 192, 192, 0.5), rgba(161, 105, 0, 0.3)), url(../pics/popynoid.jpg);
+    min-height: 100vh;
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    margin-bottom: 3rem;
+}
+
+@media(max-width: 1300px){
+    .header {
+        background-position-x: 30%;
+    }
+
+    .logo {
+        display: none;
+    }
+
+    .titul {
+        margin-top: 40vh;
+    }
+}
+
+/* tým */
+
+.tym {
+    max-width: min(1300px,95%);
+    margin: 1rem auto;
+    display: flex;
+    gap: 30px;
+    align-items: center;
+}
+
+.clenTymuFotka {
+    max-width: min(100%,700px);
+    margin: 0 auto;
+}
+
+.clenTymuFotka img {
+    max-width: min(100%,700px);
+   
+}
+
+.clenTymuText {
+    width: min(100%,500px);
+    margin: 0 auto;
+    text-align: center;
+}

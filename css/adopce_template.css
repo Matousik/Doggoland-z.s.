@@ -1,0 +1,73 @@
+.header {
+    background:linear-gradient(120deg, rgba(192, 192, 192, 0.5), rgba(161, 105, 0, 0.3)), url(../pics/popynoid.jpg);
+    min-height: 60vh;
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    margin-bottom: 3rem;
+}
+
+@media(max-width: 1300px){
+    .header {
+        background-position-x: 30%;
+    }
+
+    .logo {
+        display: none;
+    }
+
+    .titul {
+        margin-top: 40vh;
+    }
+}
+
+/* adopce */
+
+.adopceContainer {
+    max-width: min(1500px, 100%);
+    margin: 3rem auto;
+    display: flex;
+}
+
+
+
+/* uvodni obrazek a gallery */
+
+.uvodniObrazek {
+    max-width: 100%;
+}
+
+.galleryContainer {
+    max-width: min(800px,100%);
+}
+
+/* textove pole */
+
+.popisAdopceContainer {
+    margin: 0 1rem;
+    max-width: 600px;
+}
+
+.textovePole {
+    min-width: 90%;
+
+}
+
+.popisAdopceContainer h2, .popisAdopceContainer p {
+    text-align: left;
+    margin: 1rem 0;
+    max-width: 100%;
+}
+
+.textovePole hr {
+    width: 100%;
+    border-color: rgba(161, 105, 0, 0.3);
+}
+
+@media (max-width:900px) {
+    .adopceContainer {
+        flex-wrap: wrap;
+        max-width: 95%;
+    }
+}
+
