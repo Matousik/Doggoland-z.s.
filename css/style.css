@@ -26,8 +26,8 @@ h3 {
     font-weight: 300;
 }
 
-p {
-    font-size: clamp(15px, 4vw, 20px);
+p, span {
+    font-size: clamp(18px, 4vw, 20px);
     line-height: 1.6rem;
 }
 
@@ -393,8 +393,8 @@ button:hover {
 /* main */
 
 
-main p {
-    max-width: min(1000px,70%);
+main p, main h2 {
+    max-width: min(1300px,95%);
     margin: 1rem auto;
 }
 
@@ -443,6 +443,8 @@ main p {
     display: flex;
     justify-content: space-between;
     flex-wrap: wrap;
+    gap: 30px;
+    margin: 2rem 0;
 }
 
 hr {
@@ -473,6 +475,16 @@ hr {
     margin-right: 1rem;
 }
 
+@media (max-width: 700px) {
+    .socials {
+        margin: 0 auto;
+    }
+
+    .mailATelefon {
+        margin: 0 auto;
+    }
+}
+
 
 
 #ja {
@@ -493,6 +505,7 @@ hr {
     flex-wrap: wrap;
     max-width: 1200px;
     margin: 3rem auto;
+    justify-content: center;
 }
 
 .jedenClanek {
