@@ -63,10 +63,28 @@
 /* partners */
 
 .partnersGrid {
-    max-width: min(1400px, 95%);
-    margin: 2rem auto;
-    display: flex;
-    justify-content: center;
-    gap: 40px;
-    flex-wrap: wrap;
+    max-width: min(1500px,95%);
+        margin: 1rem auto;
+}
+
+.obrazekVlevo {
+
+        max-width: min(1500px,95%);
+        margin: 1rem auto;
+        display: flex;
+        align-items: center;
+        flex-wrap: wrap-reverse;
+
+}
+
+.obrazekVpravo {
+     max-width: min(1500px,95%);
+        margin: 1rem auto;
+        display: flex;
+        align-items: center;
+        flex-wrap: wrap;
+}
+
+.partnersVelkyObrazek {
+    max-height: 800px;
 }

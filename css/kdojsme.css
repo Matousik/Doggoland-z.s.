@@ -29,20 +29,41 @@
     display: flex;
     gap: 30px;
     align-items: center;
+    flex-wrap: wrap;
+    justify-content: center;
 }
 
-.clenTymuFotka {
-    max-width: min(100%,700px);
-    margin: 0 auto;
+.clenTymuContainer {
+    max-width: min(600px, 100%);
+    border: 2px outset rgba(199,121,84,0.6);
+    padding: 0.5rem;
 }
 
-.clenTymuFotka img {
-    max-width: min(100%,700px);
-   
+.clenTymuContainer p {
+    max-width: 95%;
 }
 
-.clenTymuText {
-    width: min(100%,500px);
-    margin: 0 auto;
-    text-align: center;
+.profilovkaJmenoRole {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.profilovkaJmenoRole img {
+    max-width: min(150px,100%);
+    border-radius: 200px;
+}
+
+.jmenoRole {
+    margin-top: 1rem;
+}
+
+.jmenoRole h3 {
+    font-weight: 400;
+}
+
+.jmenoRole h5 {
+    font-weight: 300;
+    margin-top: 0.3rem;
 }

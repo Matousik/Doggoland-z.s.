@@ -16,7 +16,7 @@ h1 {
 
 h2 {
     font-weight: 300;
-    font-size: clamp(1.5rem, 5vw, 2rem);
+    font-size: clamp(1.7rem, 5vw, 2.2rem);
     text-align: center;
     margin: 2rem 0;
 }
@@ -31,14 +31,21 @@ p {
     line-height: 1.6rem;
 }
 
+a {
+    text-decoration: none;
+}
+
 ul li, ol li {
     line-height: 1.6rem;
     margin: 1.8rem 0;
 }
 
+.underline:hover {
+    text-decoration: solid underline rgba(107, 43, 0, 0.589) 3px;
+}
 
-.underline {
-    text-decoration: underline;
+.brown {
+    color: rgba(107, 43, 0, 0.85); 
 }
 
 .bold {
@@ -105,7 +112,7 @@ button:hover {
 
 /* podtrzeni */
 
-.hover-underline-animation {
+/* .hover-underline-animation {
     display: inline-block;
     position: relative;
   }
@@ -131,7 +138,7 @@ button:hover {
 
 .hoverBackground {
     color: rgba(107, 43, 0, 0.85);
-}
+} */
 
 /* animation background */
 
@@ -505,7 +512,7 @@ hr {
 }
 
 .jedenClanekThumb {
-    max-height: 300px;
+    max-height: 250px;
     overflow: hidden;
     display: flex;
     justify-content: center;
