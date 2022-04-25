@@ -40,6 +40,10 @@ ul li, ol li {
     margin: 1.8rem 0;
 }
 
+ol {
+    margin-left: 1.5rem;
+}
+
 .underline:hover {
     text-decoration: solid underline rgba(107, 43, 0, 0.589) 3px;
 }
@@ -472,7 +476,7 @@ hr {
 
 .socials a {
     text-decoration: none;
-    margin-right: 1rem;
+    margin: 0 0.5rem;
 }
 
 @media (max-width: 700px) {
@@ -547,4 +551,56 @@ hr {
 .nadpisClanku {
     font-size: 1.2rem;
     margin: 0.5rem 0;
+}
+
+/* tilted border img */
+
+/* border */
+
+.separatorRight{
+    width:100%;
+    margin-bottom: -10vw;
+    z-index: 100;
+}
+
+.separatorRight:after{
+    content:'';
+    display:block;
+    border-right: 100vw solid rgb(255, 255, 255);
+    border-top: 1vw solid transparent;;
+    border-left:0;
+    border-bottom: 5vw solid transparent;
+    z-index: 100;
+}
+
+.separatorLeft{
+    width:100%;
+    margin-top: -10vw;
+}
+
+.separatorLeft:after{
+    content:'';
+    display:block;
+    border-left: 100vw solid rgb(255, 255, 255);
+    border-top: 5vw solid transparent;
+    border-right:0;
+    border-bottom: 1vw solid transparent;
+}
+
+/* interImg */
+
+.interImg {
+    max-height: 800px;
+    overflow: hidden;
+    z-index: -100;
+    margin: 5vw auto;
+    display: flex;
+    align-items: center;
+}
+
+.interImg img {
+    width: 100%;
+    position: sticky;
+    z-index: -100;
+    max-height: none !important;    
 }

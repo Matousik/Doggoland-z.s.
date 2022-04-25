@@ -62,39 +62,6 @@ main p {
   margin-left: 1rem;
 }
 
-
-/* border */
-
-.separatorRight{
-    width:100%;
-    margin-bottom: -10vw;
-    z-index: 100;
-}
-
-.separatorRight:after{
-    content:'';
-    display:block;
-    border-right: 100vw solid rgb(255, 255, 255);
-    border-top: 1vw solid transparent;;
-    border-left:0;
-    border-bottom: 5vw solid transparent;
-    z-index: 100;
-}
-
-.separatorLeft{
-    width:100%;
-    margin-top: -10vw;
-}
-
-.separatorLeft:after{
-    content:'';
-    display:block;
-    border-left: 100vw solid rgb(255, 255, 255);
-    border-top: 5vw solid transparent;
-    border-right:0;
-    border-bottom: 1vw solid transparent;
-}
-
 /* images */
 
 .velkyObrazek {
@@ -107,23 +74,6 @@ main p {
 
 .malyObrazek {
     max-width: min(400px,95%);
-}
-
-/* interImg */
-
-.interImg {
-    max-height: 800px;
-    overflow: hidden;
-    z-index: -100;
-    margin: 5vw auto;
-    display: flex;
-    align-items: center;
-}
-
-.interImg img {
-    width: 100%;
-    position: sticky;
-    z-index: -100;    
 }
 
 .imgContainer {
@@ -162,3 +112,10 @@ img {
     width: min(300px, 100%);
 }
 
+/* autor */
+
+.autor, .datum {
+    color: rgba(0, 0, 0, 0.4);
+    font-size: 0.8rem;
+    line-height: 0.5rem;
+}
