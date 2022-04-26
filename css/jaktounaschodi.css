@@ -1,7 +1,7 @@
 .header {
-    background:linear-gradient(120deg, rgba(192, 192, 192, 0.5), rgba(161, 105, 0, 0.3)), url(../pics/popynoid.jpg);
+    background:linear-gradient(120deg, rgba(192, 192, 192, 0.5), rgba(161, 105, 0, 0.3)), url(../pics/boban-viky.jpg);
     min-height: 100vh;
-    background-position: center;
+    background-position: right;
     background-size: cover;
     background-repeat: no-repeat;
 }
@@ -18,6 +18,12 @@
     .titul {
         margin-top: 40vh;
     }
+}
+
+@media (max-width: 600px) {
+  .header {
+    background-position-x: 60%;
+  }
 }
 
 /* timeline */
@@ -233,5 +239,9 @@
     margin-top: 4rem;
   }
 
+}
+
+.scrollerTitles, .scrollerButtons {
+  display: none;
 }
   

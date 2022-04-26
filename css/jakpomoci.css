@@ -1,7 +1,7 @@
 .header {
     background:linear-gradient(0deg, rgba(0, 0, 0, 0.5), rgba(51, 51, 51, 0.3)), url(../pics/jakpomoci-background.jpg);
     min-height: 100vh;
-    background-position: center;
+    
     background-size: cover;
     background-repeat: no-repeat;
     margin-bottom: 3rem;
