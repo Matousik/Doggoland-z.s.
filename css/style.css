@@ -80,10 +80,10 @@ ol {
     background-size: cover;
     background-repeat: no-repeat;
     backface-visibility: hidden;
-    animation: movingBackground 25s infinite;
-    -webkit-animation: movingBackground 25s infinite;
-    -moz-animation:movingBackground 25s infinite;
-    -o-animation:movingBackground 25s infinite;
+    animation: movingBackground 30s infinite;
+    -webkit-animation: movingBackground 30s infinite;
+    -moz-animation:movingBackground 30s infinite;
+    -o-animation:movingBackground 30s infinite;
     box-shadow:inset 0 0 0 2000px rgba(34, 34, 34, 0.3);
 }
 
@@ -149,31 +149,37 @@ button:hover {
 
 @keyframes movingBackground {
     0% {
-        background-image: url(../pics/anubis.jpg);
+        background-image: url(../pics/misule.jpg);
         animation-timing-function: ease-in-out;
        
     }
 
-    25% {
-        background-image: url(../pics/misule.jpg);
+    20% {
+        background-image: url(../pics/anubis.jpg);
         animation-timing-function: ease-in;
        
     }
 
-    50% {
-        background-image: url(../pics/popynoid.jpg);
+    40% {
+        background-image: url(../pics/main-background.jpg);
         animation-timing-function: ease-in;
       
     }
 
-    75% {
-        background-image: url(../pics/main-background.jpg);
+    60% {
+        background-image: url(../pics/ruzova-sendy.jpg);
+        animation-timing-function: ease-in;
+     
+    }
+
+    80% {
+        background-image: url(../pics/popynoid.jpg);
         animation-timing-function: ease-in;
      
     }
 
     100% {
-        background-image: url(../pics/anubis.jpg);
+        background-image: url(../pics/misule.jpg);
         animation-timing-function: ease-in-out;
       
     }

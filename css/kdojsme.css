@@ -1,5 +1,5 @@
 .header {
-    background:linear-gradient(120deg, rgba(192, 192, 192, 0.5), rgba(161, 105, 0, 0.3)), url(../pics/popynoid.jpg);
+    background:linear-gradient(120deg, rgba(192, 192, 192, 0.5), rgba(161, 105, 0, 0.3)), url(../pics/barneby2.jpg);
     min-height: 100vh;
     background-position: center;
     background-size: cover;
@@ -17,7 +17,13 @@
     }
 
     .titul {
-        margin-top: 40vh;
+        margin-top: 55vh;
+    }
+}
+
+@media(max-width: 700px){
+    .header {
+        background-position-x: 60%;
     }
 }
 
