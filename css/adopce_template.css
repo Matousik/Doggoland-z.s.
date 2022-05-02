@@ -24,7 +24,7 @@
 /* adopce */
 
 .adopceContainer {
-    max-width: min(1500px, 100%);
+    max-width: min(1500px, 95%);
     margin: 3rem auto;
     display: flex;
 }
@@ -39,23 +39,22 @@
 
 .galleryContainer {
     max-width: min(800px,100%);
+    margin: 0 auto;
 }
 
 /* textove pole */
 
 .popisAdopceContainer {
-    margin: 0 1rem;
     max-width: 600px;
 }
 
 .textovePole {
-    min-width: 90%;
+    min-width: 100%;
 
 }
 
 .popisAdopceContainer h2, .popisAdopceContainer p {
     text-align: left;
-    margin: 1rem 0;
     max-width: 100%;
 }
 
@@ -67,7 +66,6 @@
 @media (max-width:900px) {
     .adopceContainer {
         flex-wrap: wrap;
-        max-width: 95%;
     }
 }
 

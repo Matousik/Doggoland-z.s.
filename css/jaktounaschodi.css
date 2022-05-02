@@ -176,7 +176,7 @@
     box-shadow: -230px 0 150px 50vw rgba(0, 0, 0, 0.5);
   }
   .timeline .swiper-slide-content {
-    right: 15%;
+    right: 35%;
     top: 50%;
     transform: translateY(-50%);
     width: 500px;
@@ -223,7 +223,7 @@
     box-shadow: -230px 0 150px 39vw rgba(0, 0, 0, 0.5);
   }
   .timeline .swiper-slide-content {
-    right: 20%;
+    right: 30%;
   }
 }
 

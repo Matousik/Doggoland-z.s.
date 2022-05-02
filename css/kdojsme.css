@@ -47,6 +47,7 @@
 
 .clenTymuContainer p {
     max-width: 95%;
+    color: rgba(0, 0, 0, 0.6);;
 }
 
 .profilovkaJmenoRole {
@@ -67,6 +68,7 @@
 
 .jmenoRole h3 {
     font-weight: 400;
+    font-size: clamp(1.6rem, 6vw, 1.8rem);
 }
 
 .jmenoRole h5 {

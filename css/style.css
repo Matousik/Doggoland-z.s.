@@ -8,6 +8,8 @@
     box-sizing: border-box;
 }
 
+
+
 h1 {
     font-size: clamp(2rem, 5vw, 2.5rem);
     font-weight: 300;
@@ -16,13 +18,13 @@ h1 {
 
 h2 {
     font-weight: 300;
-    font-size: clamp(1.7rem, 5vw, 2.2rem);
+    font-size: clamp(1.4rem, 5vw, 2.2rem);
     text-align: center;
     margin: 2rem 0;
 }
 
 h3 {
-    font-size: clamp(1.3rem, 10vw, 1.8rem);
+    font-size: clamp(1.1rem, 10vw, 1.8rem);
     font-weight: 300;
 }
 
@@ -31,17 +33,40 @@ p, span {
     line-height: 1.6rem;
 }
 
+
+
 a {
     text-decoration: none;
 }
 
 ul li, ol li {
-    line-height: 1.6rem;
+    line-height: 1.4rem;
     margin: 1.8rem 0;
 }
 
 ol {
-    margin-left: 1.5rem;
+    margin-left: 1rem;
+}
+
+br {
+    margin-bottom: -0.2rem;
+}
+
+@media (max-width: 800px) {
+    * {
+        letter-spacing: 0.07rem;
+    }
+
+    p, span {
+        line-height: 1.1rem;
+        font-size: 16px;
+    }
+
+    ul li, ol li {
+        line-height: 1rem;
+        font-size: 16px;
+        margin: 0.5rem 0;
+    }
 }
 
 .underline:hover {
@@ -187,65 +212,77 @@ button:hover {
 
 @-webkit-keyframes movingBackground {
     0% {
-        background-image: url(../pics/anubis.jpg);
-        animation-timing-function: ease-in-out;
-        transform: scale(1.05);
-    }
-
-    25% {
         background-image: url(../pics/misule.jpg);
-        animation-timing-function: ease-in;
-        transform: scale(1.05);
+        animation-timing-function: ease-in-out;
+       
     }
 
-    50% {
-        background-image: url(../pics/popynoid.jpg);
+    20% {
+        background-image: url(../pics/anubis.jpg);
         animation-timing-function: ease-in;
-        transform: scale(1.05);
+       
     }
 
-    75% {
+    40% {
         background-image: url(../pics/main-background.jpg);
         animation-timing-function: ease-in;
-        transform: scale(1.05);
+      
+    }
+
+    60% {
+        background-image: url(../pics/ruzova-sendy.jpg);
+        animation-timing-function: ease-in;
+     
+    }
+
+    80% {
+        background-image: url(../pics/popynoid.jpg);
+        animation-timing-function: ease-in;
+     
     }
 
     100% {
-        background-image: url(../pics/anubis.jpg);
+        background-image: url(../pics/misule.jpg);
         animation-timing-function: ease-in-out;
-        transform: scale(1.05);
+      
     }
 }
 
 @-moz-keyframes movingBackground {
     0% {
-        background-image: url(../pics/anubis.jpg);
-        animation-timing-function: ease-in-out;
-        transform: scale(1.05);
-    }
-
-    25% {
         background-image: url(../pics/misule.jpg);
-        animation-timing-function: ease-in;
-        transform: scale(1.05);
+        animation-timing-function: ease-in-out;
+       
     }
 
-    50% {
-        background-image: url(../pics/popynoid.jpg);
+    20% {
+        background-image: url(../pics/anubis.jpg);
         animation-timing-function: ease-in;
-        transform: scale(1.05);
+       
     }
 
-    75% {
+    40% {
         background-image: url(../pics/main-background.jpg);
         animation-timing-function: ease-in;
-        transform: scale(1.05);
+      
+    }
+
+    60% {
+        background-image: url(../pics/ruzova-sendy.jpg);
+        animation-timing-function: ease-in;
+     
+    }
+
+    80% {
+        background-image: url(../pics/popynoid.jpg);
+        animation-timing-function: ease-in;
+     
     }
 
     100% {
-        background-image: url(../pics/anubis.jpg);
+        background-image: url(../pics/misule.jpg);
         animation-timing-function: ease-in-out;
-        transform: scale(1.05);
+      
     }
 }
 
@@ -305,6 +342,21 @@ button:hover {
 }
 
 @media(max-width: 1550px){
+    .navigation {
+        flex-wrap: wrap-reverse;
+        text-align: center;
+    }
+
+    .logo {
+        margin: 0 auto;
+    }
+}
+
+@media(max-width: 1050px){
+    .navigation {
+        flex-wrap: wrap-reverse;
+    }
+
     .nav-links ul {
         display: block;
         margin-top: 60px;
@@ -410,7 +462,7 @@ main p, main h2 {
 }
 
 .novinky {
-    max-width: min(1500px,95%);
+    max-width: min(1500px,100%);
     margin: 1rem auto;
     display: flex;
     align-items: center;
@@ -435,7 +487,7 @@ main p, main h2 {
 
 .pravaStrana p {
     text-align: left;
-    max-width: 90%;
+
 }
 
 .pravaStrana img {
@@ -558,6 +610,12 @@ hr {
 .nadpisClanku {
     font-size: 1.2rem;
     margin: 0.5rem 0;
+}
+
+@media (max-width: 800px) {
+    .nadpisClanku {
+        font-size: 1rem;
+    }
 }
 
 /* tilted border img */
