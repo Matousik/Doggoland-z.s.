@@ -66,6 +66,11 @@ ul li {
     margin: 0.4rem 0;
 }
 
+.jednaAdopceThumb {
+    max-height: 400px;
+    object-fit: cover;
+}
+
 
 .jednaAdopce img {
     width: 100%;
