@@ -81,11 +81,11 @@ main p {
 /* images */
 
 .velkyObrazek {
-    max-width: min(900px,95%);
+    max-width: min(800px,95%);
 }
 
-.stredniObrazek {
-    max-width: min(600px,95%);
+.stredneVelkyObrazek {
+    max-width: min(500px,95%);
 }
 
 .malyObrazek {
@@ -93,6 +93,10 @@ main p {
 }
 
 .imgContainer {
+    text-align: center;
+}
+
+.obrazekStred {
     text-align: center;
 }
 
@@ -114,7 +118,7 @@ img {
 
 /* img caption */ 
 
-.popisObrazku {
+figure figcaption, .popisObrazku {
     color: rgb(141, 141, 141);
     font-size: clamp(13px, 4vw, 17px);
     text-align: center;
