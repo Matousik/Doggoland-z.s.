@@ -18,7 +18,9 @@
     <meta name="theme-color" content="#ffffff">
     
     <link rel="stylesheet" href="css/style.css"> 
+    <link rel="stylesheet" href="css/clanky_template.css">
     <link rel="stylesheet" href="css/adopce.css">
+    
 
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -43,12 +45,20 @@
             <div class="nav-links">
                 <ul>
                     <i class="fa-solid fa-angle-right" id="menuOffIcon"></i>
-                    <li><a href="kdojsme">kdo jsme?</a></li>
-                    <li><a href="jaktounaschodi">jak to u nás chodí?</a></li>
                     <li><a href="adopce">adopce</a></li>
-                    <li><a href="jakpomoci">jak pomoci</a></li>
-                    <li><a href="kontakt">kontakt</a></li>
-                    <li><a href="napsali-jsme">chcete vědět víc?</a></li>
+                    <li><a href="jaktounaschodi">jak to u nás chodí?</a></li>
+                    <li><a href="slevy">nákupy se slevou</a></li>
+                    <li>
+                        <a onclick="showDropdownMenu('dropdown-vice-informaci')" class="dropdown-a">
+                            Více informací 
+                        </a>
+                        <div id="dropdown-vice-informaci" class="dropdown-box">
+                            <a href="kdojsme">kdo jsme?</a>
+                            <a href="jakpomoci">jak pomoci?</a>
+                            <a href="kontakt">kontakt</a>
+                            <a href="napsali-jsme">chcete vědět víc?</a>
+                        </div>
+                    </li>
                 </ul>
             </div>
             <i class="fa-solid fa-bars" id="menuIcon"></i>
@@ -59,124 +69,122 @@
     </section>
     <main>
         <p> Zde naleznete všechny naše svěřence připravené k adopci. Pokud zde nevidíte zvířátko, které znáte z našich facebookových stránek, tak je velmi pravděpodobné, že zatím k adopci není. Máte-li zájem o adopci jednoho z našich svěřenců, tak nás neváhejte kontaktovat na telefonním čísle +420 739 071 777 nebo na e-mailu info@doggoland.cz.</p>
-        <div class="adopceGrid">
-            <div class="jednaAdopce">
-                <img src="pics/psi-adopce/Falco-nahled-novy.jpg" loading="lazy" alt="" class="jednaAdopceThumb">
-                <div class="jednaAdopceBlokTextu">
-                    <h3 class="jednaAdopceJmeno">Falco</h3>
-                    
-                    <ul class="jednaAdopcePopis">
-                        <li>Cca 1,5 roku. 🐾</li>
-                        <li>Cca 23 kg. 🐾</li>
-                        <li>Vhodný do domečku se zahradou. 🏡</li>
-                        <li>Vhodný k aktivnímu psímu parťákovi. 🐶🐱</li>
-                        <li>Pouze ke starším dětem. 👶🏻</li>
-                        <li>Velmi aktivní pes skvělý pro sportovce. 🏃🏼‍♀️🌳</li> 
-                        <li>Mladý divoch, který se stále vše učí. Potřebuje jasná pevně daná pravidla, není vhodný pro začátečníky. Pracujeme na separační úzkosti, kterou trpí.
-                            🤪</li>
-                    </ul>
-                    <a href="psi/falco.html"><button class="jednaAdopceTlacitko">Více informací</button></a>
+        <div class="a-wrapper">
+            <a href="#prubeh-adopce"><button class="velke-tlacitko">Jak adopce u nás probíhá?</button></a>
+        </div>
+        
+        <div class="adopceWrapper">
+            <div class="adopceGrid">
+                <div class="jednaAdopce">
+                    <img src="pics/psi-adopce/Falco-nahled-novy.jpg" loading="lazy" alt="" class="jednaAdopceThumb">
+                    <div class="jednaAdopceBlokTextu">
+                        <h3 class="jednaAdopceJmeno">Falco</h3>
+                        
+                        <ul class="jednaAdopcePopis">
+                            <li>Cca 1,5 roku. 🐾</li>
+                            <li>Cca 23 kg. 🐾</li>
+                            <li>Vhodný do domečku se zahradou. 🏡</li>
+                            <li>Vhodný k aktivnímu psímu parťákovi. 🐶🐱</li>
+                            <li>Pouze ke starším dětem. 👶🏻</li>
+                            <li>Velmi aktivní pes skvělý pro sportovce. 🏃🏼‍♀️🌳</li> 
+                            <li>Mladý divoch, který se stále vše učí. Potřebuje jasná pevně daná pravidla, není vhodný pro začátečníky. Pracujeme na separační úzkosti, kterou trpí.
+                                🤪</li>
+                        </ul>
+                        <a href="psi/falco.html"><button class="jednaAdopceTlacitko">Více informací</button></a>
+                    </div>
+                </div>
+                <div class="jednaAdopce">
+                    <img src="pics/psi-adopce/rosie-portret.jpg " loading="lazy" alt="" class="jednaAdopceThumb">
+                    <div class="jednaAdopceBlokTextu">
+                        <h3 class="jednaAdopceJmeno">Rosie</h3>
+                        
+                        <ul class="jednaAdopcePopis">
+                            <li>Cca 2 roky 🐾</li>
+                            <li>Cca 23 kg. 🐾</li>
+                            <li>Vhodná pouze do domečku se zahradou. 🏡</li>
+                            <li>Vhodná k empatickému psímu parťákovi. 🐶🐱</li>
+                            <li>Pouze ke starším dětem. 👶🏻</li>
+                            <li>Fenka vhodná pro aktivní rodinu, která ráda tráví čas v přírodě 🏃🏼‍♀️🌳</li> 
+                            <li>Rosie je fenečka z velmi otřesných podmínek, přijela k nám v katastrofálním stavu. Proto je třeba opravdu zkušenou a trpělivou rodinu, která ji bude oporou. Potom ji bude Rosie naoplátku věrnou a veselou parťačkou.
+                                🤪</li>
+                        </ul>
+                        <a href="psi/rosie.html"><button class="jednaAdopceTlacitko">Více informací</button></a>
+                    </div>
+                </div>
+                <div class="jednaAdopce">
+                    <img src="pics/psi-adopce/pajda/pajda-rucnik.jpg" loading="lazy" alt="" class="jednaAdopceThumb">
+                    <div class="jednaAdopceBlokTextu">
+                        <h3 class="jednaAdopceJmeno">Pajda</h3>
+                        
+                        <ul class="jednaAdopcePopis">
+                            <li>Cca půl roku 🐾</li>
+                            <li>Vhodný do bytu i domečku🏡</li>
+                            <li>Ocení kočičí kamarády🐶🐱</li>
+                            <li>Pouze ke starším dětem. 👶🏻</li>
+                            <li>Pajda je mazlivé zlatíčko, které mělo smůlu a přišlo o zadní nožičku. S pahýlkem ale funguje skvěle, v ničem ho neozmezuju. Není třeba žádné extra péče. Jako každé koťátko miluje mazlení a hromadu hraček. 
+                                🤪</li>
+                        </ul>
+                        <a href="psi/pajda.html"><button class="jednaAdopceTlacitko">Více informací</button></a>
+                    </div>
+                </div>
+                <div class="jednaAdopce">
+                    <img src="pics/psi-adopce/kocka-se-zlobi.jpg" loading="lazy" alt="" class="jednaAdopceThumb">
+                    <div class="jednaAdopceBlokTextu">
+                        <h3 class="jednaAdopceJmeno">Kikča</h3>
+                        
+                        <ul class="jednaAdopcePopis">
+                            <li>Cca 8 let 🐾</li>
+                            <li>Vhodná do bytu i domečku 🏡</li>
+                            <li>Pejsků si nevšímá, s další kočičkou není vyzkoušeno. 🐶🐱</li>
+                            <li>Pouze ke starším dětem. 👶🏻</li>
+                            <li>Mazlivá úžasná povaha.
+                                🤪</li>
+                        </ul>
+                        <a href="psi/kikca.html"><button class="jednaAdopceTlacitko">Více informací</button></a>
+                    </div>
+                </div>
+                <div class="jednaAdopce">
+                    <img src="pics/psi-adopce/micky/micky-vyska-trava.jpg" loading="lazy" alt="" class="jednaAdopceThumb">
+                    <div class="jednaAdopceBlokTextu">
+                        <h3 class="jednaAdopceJmeno">Micky</h3>
+                        
+                        <ul class="jednaAdopcePopis">
+                            <li>Cca 8 let 🐾</li>
+                            <li>Cca 6 kg. 🐾</li>
+                            <li>Vhodný do domečku se zahradou i bytu. 🏡</li>
+                            <li>Vhodný k pejskům i kočičkám. 🐶🐱</li>
+                            <li>Ideální by byl domov bez dětí 👶🏻</li>
+                            <li>Micky je akční pejsek, procházky jsou třeba plánovat dle jeho situace se zadní packou🏃🏼‍♀️🌳</li> 
+                            <li>Micky trpí strachovou agresí na které pracujeme. Budeme pro něj hledat trpělivou a milující rodinu, která má zkušenosti s týranými pejsky.
+                                🤪</li>
+                        </ul>
+                        <a href="psi/micky.html"><button class="jednaAdopceTlacitko">Více informací</button></a>
+                    </div>
                 </div>
             </div>
-            <div class="jednaAdopce">
-                <img src="pics/psi-adopce/Hanicka.jpg " loading="lazy" alt="" class="jednaAdopceThumb">
-                <div class="jednaAdopceBlokTextu">
-                    <h3 class="jednaAdopceJmeno">Hanička</h3>
-                    
-                    <ul class="jednaAdopcePopis"> 
-                        <li>K ADOPCI na záčátku srpna 2022. 🐾</li>
-                        <li>Vhodná do bytu nebo domu s přístupem dovnitř. Není vhodná jako venkovní kočka. 🏡</li>
-                        <li>Ocení kočičího parťáka, na pejsky je zvyklá. 🐶🐱</li>
-                        <li>Na manipulaci zvyklá, není to však HRAČKA pro děti. 👶🏻</li>
-                        <li>Nejmenší kočička z vrhu, ale největší strávník. </li>
-                        <li>Do nového domova odjede odčervena a vymazlená. Kastrace v pozdějším věku podmínkou. :)</li> 
-                    </ul>
-                    <a href="tel:00420-739-071-777"><button class="jednaAdopceTlacitko">Rezervace</button></a>
-                </div>
-            </div>
-            <!--<div class="jednaAdopce">
-                <img src="pics/psi-adopce/Uhelka.jpg " loading="lazy" alt="" class="jednaAdopceThumb">
-                <div class="jednaAdopceBlokTextu">
-                    <h3 class="jednaAdopceJmeno">Dasty</h3>
-                    
-                    <ul class="jednaAdopcePopis">
-                        <li>K ADOPCI na záčátku srpna 2022. 🐾</li>
-                        <li>Vhodná do bytu nebo domu s přístupem dovnitř. Není vhodná jako venkovní kočka. 🏡</li>
-                        <li>Ocení kočičího parťáka, na pejsky je zvyklá. 🐶🐱</li>
-                        <li>Na manipulaci zvyklá, není to však HRAČKA pro děti. 👶🏻</li>
-                        <li>Velmi zvědavá a akční kočička. </li> 
-                        <li>Do nového domova odjede odčervena a vymazlená. Kastrace v pozdějším věku podmínkou. :)</li>
-                    </ul>
-                    <a href="psi/falco.html"><button class="jednaAdopceTlacitko">Více informací</button></a>
-                </div>
-            </div>
-            <div class="jednaAdopce">
-                <img src="pics/psi-adopce/Bouhousek.jpg " loading="lazy" alt="" class="jednaAdopceThumb">
-                <div class="jednaAdopceBlokTextu">
-                    <h3 class="jednaAdopceJmeno">Doby</h3>
-                    
-                    <ul class="jednaAdopcePopis">
-                        <li>K ADOPCI na záčátku srpna 2022. 🐾</li>
-                        <li>Vhodný do bytu nebo domu s přístupem dovnitř. Není vhodný jako venkovní kocour. 🏡</li>
-                        <li>Ocení kočičího parťáka, na pejsky je zvyklý. 🐶🐱</li>
-                        <li>Na manipulaci zvyklý, není to však HRAČKA pro děti. 👶🏻</li>
-                        <li>Jediný chlapeček, největší koťatko z celého vrhu. </li>
-                        <li>Do nového domova odjede odčerven a vymazlen. Kastrace v pozdějším věku podmínkou. :)</li> 
-                    </ul>
-                    <a href="psi/falco.html"><button class="jednaAdopceTlacitko">Více informací</button></a>
-                </div>
-            </div>
-            <div class="jednaAdopce">
-                <img src="pics/psi-adopce/Alenka.jpg " loading="lazy" alt="" class="jednaAdopceThumb">
-                <div class="jednaAdopceBlokTextu">
-                    <h3 class="jednaAdopceJmeno">Scheila</h3>
-                    
-                    <ul class="jednaAdopcePopis">
-                        <li>K ADOPCI na záčátku srpna 2022. 🐾</li>
-                        <li>Vhodná do bytu nebo domu s přístupem dovnitř. Není vhodná jako venkovní kočka. 🏡</li>
-                        <li>Ocení kočičího parťáka, na pejsky je zvyklá. 🐶🐱</li>
-                        <li>Na manipulaci zvyklá, není to však HRAČKA pro děti. 👶🏻</li>
-                        <li>Velmi něžná, klidná a hodná kočička. </li> 
-                        <li>Do nového domova odjede odčervena a vymazlená. Kastrace v pozdějším věku podmínkou. :)</li>
-                    </ul>
-                    <a href="psi/falco.html"><button class="jednaAdopceTlacitko">Více informací</button></a>
-                </div>
-            </div>
-            <div class="jednaAdopce">
-                <img src="pics/psi-adopce/Alenka.jpg " loading="lazy" alt="" class="jednaAdopceThumb">
-                <div class="jednaAdopceBlokTextu">
-                    <h3 class="jednaAdopceJmeno">Rosie</h3>
-                    
-                    <ul class="jednaAdopcePopis">
-                        <li>K ADOPCI na záčátku srpna 2022. 🐾</li>
-                        <li>Vhodná do bytu nebo domu s přístupem dovnitř. Není vhodná jako venkovní kočka. 🏡</li>
-                        <li>Ocení kočičího parťáka, na pejsky je zvyklá. 🐶🐱</li>
-                        <li>Na manipulaci zvyklá, není to však HRAČKA pro děti. 👶🏻</li>
-                        <li>Velmi něžná, klidná a hodná kočička. </li> 
-                        <li>Do nového domova odjede odčervena a vymazlená. Kastrace v pozdějším věku podmínkou. :)</li>
-                    </ul>
-                    <a href="psi/falco.html"><button class="jednaAdopceTlacitko">Více informací</button></a>
-                </div>
-            </div>
-            <div class="jednaAdopce">
-                <img src="pics/psi-adopce/Alenka.jpg " loading="lazy" alt="" class="jednaAdopceThumb">
-                <div class="jednaAdopceBlokTextu">
-                    <h3 class="jednaAdopceJmeno">Pajda</h3>
-                    
-                    <ul class="jednaAdopcePopis">
-                        <li>K ADOPCI na záčátku srpna 2022. 🐾</li>
-                        <li>Vhodná do bytu nebo domu s přístupem dovnitř. Není vhodná jako venkovní kočka. 🏡</li>
-                        <li>Ocení kočičího parťáka, na pejsky je zvyklá. 🐶🐱</li>
-                        <li>Na manipulaci zvyklá, není to však HRAČKA pro děti. 👶🏻</li>
-                        <li>Velmi něžná, klidná a hodná kočička. </li> 
-                        <li>Do nového domova odjede odčervena a vymazlená. Kastrace v pozdějším věku podmínkou. :)</li>
-                    </ul>
-                    <a href="psi/falco.html"><button class="jednaAdopceTlacitko">Více informací</button></a>
-                </div>
-            </div>-->
 <!--             <div>
                 <h3>Momentálně žádného pejska k adopci nenabízíme.</h3>
             </div> -->
+        </div>
+        <div class="clanekTextBlok">
+            <h1 id="prubeh-adopce">Průběh adopce</h2>
+            <h3>1. Hovor po telefonu</h3>
+            <p>U každého našeho pejska je zveřejněné telefonní číslo, na kterém čeká jedna z našich kolegyň. O pejskovi Vám řekne více informací, které se do inzerátu nevešly, a především se vyptá na více informací a podmínkách, které pejskovi můžete nabídnout. </p>
+            <h3>2. Návštěva pejska</h3>
+            <p>Pokud při telefonátu společně zhodnotíme, že by se pejsek, o kterého máte zájem, skvěle do Vaší rodiny hodil, tak Vás pozveme na návštěvu za pejskem. Návštěva probíhá vždy v dočasném domově, kde pejsek žije. Díky tomu pejska uvidíte v klidném domácím prostředí, kde je zvyklý. Po domluvě s dočaskovou tetou společně můžete jít i na procházku, kde uvidíte, jak se pejsek chová i na veřejnosti.</p>
+            <p>Chtěli bychom apelovat na jednu věc. Nebojte se ptát! Všechny dotazy jsou správné! Vybíráte si člena rodiny a máte v tuto chvíli vedle sebe člověka, který jej zná naprosto nejlépe. Pejsky máme v dočasné péči často několik měsíců, než je plně připravíme do nového domova. Díky tomu je známe opravdu dobře.</p>
+            <h3>3. Předadopční kontrola a předání pejska</h3>
+            <p>Návštěva dopadla skvěle a s pejskem jste si rozuměli. Teď už se blížíme k jistému finále. Tato poslední část adopce se liší především dle toho, kde bydlíte. </p>
+            <h4 class="tl">První varianta</h4>
+            <p>Bydlíte do cca 100 km od dočaskové tety? V tomto případě sbalíme pejska, připravenou adopční smlouvu a přijedeme se k Vám domů podívat. Nejedná se o žádnou kontrolu, jak máte doma naklizeno! 😊 Chceme pouze vidět v jakých podmínkách bude pejsek bydlet a zdali nám nebylo něco podstatného zatajeno.</p>
+            <h4 class="tl">Druhá varianta </h4>
+            <p>Bydlíte dál než 100 km od dočaskové tety? V tomto případě se dohodneme s jedním z našich dobrovolníků poblíž Vás, který Vás osobně navštíví doma. Pokud bude vše v pořádku, tak si poté budete moci pro pejska přijet a adopční smlouvu podepsat u dočaskové tety.</p>
+            <h3>4. Podpis adopční smlouvy a uhrazení adopčního poplatku</h3>
+            <p>Adopční smlouvy se není třeba obávat, jsou zde zahrnuty podmínky adopce. Mezi ty patří například souhlas s budoucí poadopční kontrolou, zasílání fotografií, informací o Vašem soužitím s pejskem atd.</p>
+            <p>Adopční poplatek se odvíjí od staří pejska, jeho zdravotního stavu a především dle úrovně jeho výcviku. S pejsky trénujeme základní poslušnost, socializujeme je a zajišťujeme nadstandardní veterinární ošetření. Pejsci od nás odchází vždy očkovaní, čipovaní (se zaregistrovaným čipem), odčervení, kastrovaní (pokud k tomu mají odpovídající věk). Pokud mají další nadstandardní vyšetření (RTG, vyšetření krve, moči…), tak se výsledné zprávy přidávají k adopční smlouvě. Do nového domova naši svěřenci dostávají i startovací balíček, kde je krmení minimálně na jeden týden a produkty našich partnerů. Výše adopčního poplatku se pohybuje od 3 000 do 10 000 Kč.</p>
+            <h3>5. První dny doma s pejskem</h3>
+            <p>A máme tu finále. První dny s novým psím parťákem nemusí být nejjednodušší. Vždy je třeba čas. Pokud by se Vám jakékoliv chování pejska nezdálo, nebo byste si nebyli jisti s jakoukoliv situací, tak se na nás můžete vždy obrátit! Jak na dočaskovou tetu, tak na vedení spolku. Vždy jsme tu pro Vás. Hned první den adopce dostanete pozvánku i do naší soukromé skupinky pro rodiny s adoptovanými pejsky. Za fotky a informace o tom, jak se Vám s novým parťákem daří, budeme rádi. 😊</p>
+
         </div>
     </main>
     <section class="footer">
@@ -207,6 +215,8 @@
         </div>
         <p id="ja">© Matouš Vondrák</p>
     </section>
+    <script type=text/javascript src="js/imagesloaded.pkgd.js"></script>
+    <script type=text/javascript src="js/masonry.pkgd.js"></script>
     <script type=text/javascript src="js/base.js"></script>
     <script type=text/javascript src="js/adopceGrid.js"></script>
 </body>

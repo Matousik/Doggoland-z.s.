@@ -34,7 +34,7 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
     <script src="../js/gallery.js"></script>
     
-    <title>Doggoland</title>
+    <title>Doggoland | Scheila</title>
 </head>
 <body>
     <section class="header" style="background:linear-gradient(120deg, rgba(192, 192, 192, 0.5), rgba(161, 105, 0, 0.3)), url(../pics/psi-adopce/falco-ok.png);
@@ -49,18 +49,26 @@
             <div class="nav-links">
                 <ul>
                     <i class="fa-solid fa-angle-right" id="menuOffIcon"></i>
-                    <li><a href="../kdojsme">kdo jsme?</a></li>
-                    <li><a href="../jaktounaschodi">jak to u nás chodí?</a></li>
                     <li><a href="../adopce">adopce</a></li>
-                    <li><a href="../jakpomoci">jak pomoci</a></li>
-                    <li><a href="../kontakt">kontakt</a></li>
-                    <li><a href="../napsali-jsme">chcete vědět víc?</a></li>
+                    <li><a href="../jaktounaschodi">jak to u nás chodí?</a></li>
+                    <li><a href="../slevy">nákupy se slevou</a></li>
+                    <li>
+                        <a onclick="showDropdownMenu('dropdown-vice-informaci')" class="dropdown-a">
+                            Více informací 
+                        </a>
+                        <div id="dropdown-vice-informaci" class="dropdown-box">
+                            <a href="../kdojsme">kdo jsme?</a>
+                            <a href="../jakpomoci">jak pomoci?</a>
+                            <a href="../kontakt">kontakt</a>
+                            <a href="../napsali-jsme">chcete vědět víc?</a>
+                        </div>
+                    </li>
                 </ul>
             </div>
             <i class="fa-solid fa-bars" id="menuIcon"></i>
         </nav>
         <div class="titul">
-            <h1>Falco</h1>
+            <h1>Scheila</h1>
         </div>
     </section>
     <main>
@@ -68,7 +76,7 @@
             
             <div class="popisAdopceContainer">
                 <div class="textovePole">
-                    <h2 class="jmenoPsa">Falco</h2>
+                    <h2 class="jmenoPsa">Scheila</h2>
                     <p>Pohlaví: pes</p>
                     <p>Plemeno: kříženec</p>
                     <p>Odhadovaný věk: 1,5 roku</p>

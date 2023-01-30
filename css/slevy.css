@@ -1,0 +1,90 @@
+.header {
+    background:linear-gradient(120deg, rgba(192, 192, 192, 0.7), rgba(161, 105, 0, 0.6)), url(../pics/doby-pamlsky.jpg);
+    min-height: 100vh;
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    margin-bottom: 3rem;
+}
+
+@media(max-width: 1300px){
+    .header {
+        background-position-x: 30%;
+    }
+
+    .logo {
+        display: none;
+    }
+
+    .titul {
+        margin-top: 40vh;
+    }
+}
+
+/* adopce grid */
+
+.adopceWrapper {
+    width: min(100%,1400px);
+    display: flex;
+    justify-content: center;
+    margin: 3rem auto;
+}
+
+.adopceGrid {
+    width: 100%;
+    margin: 0 auto;
+}
+
+.jednaAdopce {
+    width: min(100%,450px);
+    height: fit-content;
+    border: 2px solid rgba(107, 43, 0, 0.589);
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    margin-bottom: 10px;
+}
+
+.jednaAdopceBlokTextu {
+    padding: 1rem;
+}
+
+.jednaAdopceJmeno {
+    color: aliceblue;
+    margin-top: -4rem !important;
+    margin-bottom: 2rem;
+    text-shadow: 0 0 30px rgba(0, 0, 0, 1), 0 0 5px rgba(0, 0, 0, 0.8) !important;
+    text-transform: uppercase;
+    text-align: center;
+}
+
+.jednaAdopcePopis {
+    text-align: left;
+    margin-left: 0.3rem;
+}
+
+.jednaAdopcePopis li {
+    font-size: 0.8rem;
+    max-width: 95%;
+}
+
+ul li {
+    margin: 0.4rem 0;
+}
+
+.jednaAdopceThumb {
+    max-height: 600px;
+    object-fit: cover;
+}
+
+
+.jednaAdopce img {
+    width: 100%;
+}
+
+/* Průběh adopce */
+
+.prubeh-adopce-container {
+    max-width: 900px;
+}
+

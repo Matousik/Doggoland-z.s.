@@ -29,7 +29,7 @@
     flex-wrap: wrap;
     max-width: min(2000px,100%);
     margin: 2rem auto;
-    background-color: rgb(233, 233, 233);
+    background-color: rgba(107, 43, 0, 0.2);
 }
 
 .pomocBox p {
@@ -55,7 +55,7 @@
 }
 
 .pomocBox i {
-    color: rgb(85, 85, 85);
+    color: rgba(107, 43, 0, 0.85);
     font-size: 3rem;
     margin-top: 1rem;
 }

@@ -23,59 +23,33 @@
 
 h1 {
     text-align: center;
-    font-weight: 500;
+    font-weight: 700;
     margin: 1rem 0;
 }
 
-h4 {
+.podnadpis {
+    margin-bottom: 3rem;
     font-weight: 400;
     text-align: center;
-    margin-bottom: 3rem;
 }
 
 h2 {
     margin: 2rem 0 !important;
-    font-weight: 400;
+    font-weight: 500;
     text-align: left;
     font-size: clamp(1.2rem, 5vw, 2rem);
 }
 
 h3 {
     margin: 2rem 0 !important;
-    font-weight: 350;
+    font-weight: 400;
     text-align: left;
-    font-size: clamp(1rem, 5vw, 1.8rem);
+    font-size: clamp(1.1rem, 5vw, 1.8rem);
 }
 /* clanky */
 
 main p {
     max-width: min(1000px, 95%);
-}
-
-
-
-/* případy z praxe */
-
-.clanekTextBlok {
-    max-width: min(1000px, 95%);
-    margin: 2rem auto;
-}
-
-.clanekTextBlok h3 {
-    margin: 4rem 0;
-}
-
-.clanekTextBlok p {
-    margin: 1rem 0;
-}
-
-.container {
-    max-width: 1000px;
-    margin: 0 auto;
-}
-
-.clanekTextBlok ul{
-  margin-left: 1rem;
 }
 
 /* images */
@@ -85,7 +59,13 @@ main p {
 }
 
 .stredneVelkyObrazek {
-    max-width: min(500px,95%);
+    max-height: 500px;
+    max-width: 100%;
+}
+
+.stredneVelkyObrazek img {
+    max-height: 500px;
+    max-width: 100%;
 }
 
 .malyObrazek {
@@ -145,37 +125,24 @@ figure figcaption, .popisObrazku {
 
 /* autor */
 
+.autor-clanku {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+}
+
+.autor-datum {
+    width: max(500px,100%);
+}
+
 .autor, .datum {
     color: rgba(0, 0, 0, 0.4);
     font-size: 0.8rem;
-    line-height: 0.5rem;
+    line-height: 1rem;
 }
 
-/* infobox */
- .infobox {
-    min-height: 130px;
-    width: min(600px, 100%);
-    margin: 3rem auto;
-    -webkit-box-shadow: 2px 5px 16px 0px rgba(107, 43, 0, 0.2), 5px 5px 15px 5px rgba(0,0,0,0);
-    box-shadow: 2px 5px 16px 0px rgba(107, 43, 0, 0.3), 5px 5px 15px 5px rgba(0,0,0,0);
-    background: rgba(107, 43, 0, 0.2);
-    padding: 2rem 1.5rem;
-    display: flex;
-    gap: 20px;
-    align-content: center;
- }
-
- @media(max-width: 380px){
-    .infobox {
-        flex-wrap: wrap;
-    }
-
-    .infobox i {
-        margin: 0 auto;
-    }
+.autor-clanku-pic {
+    width: 50px;
+    border-radius: 50px;
 }
 
- .infobox i {
-    font-size: 45px;
-    align-self: center;
- }

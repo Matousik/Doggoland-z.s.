@@ -8,16 +8,18 @@
     box-sizing: border-box;
 }
 
-
+html {
+    scroll-behavior: smooth;
+}
 
 h1 {
     font-size: clamp(2rem, 5vw, 2.5rem);
-    font-weight: 300;
+    font-weight: 600;
 }
 
 
 h2 {
-    font-weight: 300;
+    font-weight: 500;
     font-size: clamp(1.4rem, 5vw, 2.2rem);
     text-align: center;
     margin: 2rem 0;
@@ -25,7 +27,13 @@ h2 {
 
 h3 {
     font-size: clamp(1.1rem, 10vw, 1.8rem);
+    font-weight: 400;
+}
+
+h4 {
+    font-size: clamp(1.1rem, 5vw, 1.4rem);
     font-weight: 300;
+    margin: 1rem 0;
 }
 
 p, span {
@@ -33,10 +41,19 @@ p, span {
     line-height: 1.6rem;
 }
 
+.tl {
+    text-align: left;
+}
 
+.tc {
+    text-align: center;
+}
 
 a {
     text-decoration: none;
+}
+.a-wrapper {
+    text-align: center;
 }
 
 ul li, ol li {
@@ -78,7 +95,7 @@ br {
 }
 
 .bold {
-    font-weight: 600;
+    font-weight: bold;
 }
 
 .italic {
@@ -113,31 +130,34 @@ br {
 }
 
 button {
-    margin: 20px;
         outline: none;
-        width: min(220px,60vw);
-        min-height: 60px;
-        padding: 10px 25px;
-        border: 2px solid #000;
+        width: min(250px,60vw);
+        min-height: 40px;
+        padding: 10px 15px;
         font-weight: 500;
         background: transparent;
         cursor: pointer;
         display: inline-block;
         text-transform: uppercase;
-        font-size: 1rem;
-        border-radius: 10px;
+        font-size: 0.8rem;
         transition: all 0.5s;
-    background-color: rgba(88, 86, 86, 0.6);
-    
+        background-color: rgba(179, 146, 122, 0.718);
+        color: aliceblue;
+        border: none;
+        border-radius: 5px;
 }
 
 .button {
     text-transform: uppercase;
-
 }  
 
 button:hover {
-    width: min(230px,62vw);
+    background-color: rgba(107, 43, 0, 0.701);
+}
+
+.velke-tlacitko {
+    font-size: 1rem;
+    width: fit-content;
 }
 
 /* podtrzeni */
@@ -314,7 +334,7 @@ button:hover {
 }
 
 .nav-links ul li {
-    margin-right: 1.7rem;
+    margin-right: 1.3rem;
     
     list-style: none;
 }
@@ -323,7 +343,7 @@ button:hover {
     text-decoration: none;
     color: rgb(211, 211, 211);
     font-weight: 200;
-    letter-spacing: 0.2rem;
+    letter-spacing: 0.1rem;
     text-transform: uppercase;
 }
 
@@ -365,7 +385,7 @@ button:hover {
     }
 
     .nav-links ul li {
-        margin-bottom: 30px;
+        margin-bottom: 15px;
     }
 
    
@@ -381,7 +401,7 @@ button:hover {
         backdrop-filter: blur(18px);
         color: aliceblue;
         height: 100vh;
-        width: 200px;
+        width: 230px;
         top: 0;
         right: -200px;
         display: none;
@@ -425,8 +445,68 @@ button:hover {
     
 }
 
+/* Dropdown */
+
+.dropdown-box {
+    display: none;
+    position: absolute;
+    background-color: #f1f1f1;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+    background: rgba(51, 51, 51, 0.6);
+    backdrop-filter: blur(18px);
+}
+
+.dropdown-box a {
+    color: black;
+    padding: 15px 20px;
+    text-decoration: none;
+    display: block;
+}
+
+.dropdown-box a:hover, .dropdown-box a:focus {
+    background: rgba(51, 51, 51, 1);
+}
+
+.dropdown-a {
+    cursor: pointer;
+}
+
+.dropdown-a i{
+    color: aliceblue;
+}
+
+.show-dropdown-menu {display:block;}
+
+@media(max-width: 1050px){
+    .dropdown-box {
+        right: 230px;
+        top: 170px;
+        background: rgba(51, 51, 51, 1);
+    }
+}
+
+@media(max-width: 450px){
+    .dropdown-box {
+        right: 130px;
+        top: 150px;
+        background: rgba(51, 51, 51, 1);
+    }
+}
+
+.transparentni-ucet-ref {
+    background-color: rgba(107, 43, 0, 0.5); 
+    -webkit-box-shadow: 10px 0px 71px 22px rgba(107, 43, 0, 1); 
+    -moz-box-shadow: 10px 0px 71px 22px rgba(107, 43, 0, 1); 
+    box-shadow: 10px 0px 71px 22px rgba(107, 43, 0, 1); 
+    font-weight: bold !important;
+}
+
+/* titul */
+
 .titul {
-    margin-top: 15vh;
+    margin-top: 1vh;
     text-align: center;
     text-transform: uppercase;
 }
@@ -453,6 +533,22 @@ button:hover {
     height: 1px;
 }
 
+.titul-vyber-tlacitek {
+    margin-top: 6rem;
+    width: 100%;
+    display: flex;
+    justify-content:center;
+    flex-wrap: wrap;
+    gap: 25px;
+    align-items: center;
+}
+
+@media(max-width: 1200px){
+    .titul-vyber-tlacitek {
+        margin-top: 2rem;
+    }
+}
+
 /* main */
 
 
@@ -470,13 +566,21 @@ main p, main h2 {
 }
 
 .levaStrana {
-    max-width: min(100%,800px);
-    margin: 0 auto;
+    max-width: min(100%,600px);
+    margin-left: auto;
+}
+
+.levaStrana-margin-prava {
+    max-width: min(100%,600px);
+    margin-right: auto;
+}
+
+.levaStrana-margin-prava img {
+    max-width: min(100%,600px);
 }
 
 .levaStrana img {
-    max-width: min(100%,800px);
-   
+    max-width: min(100%,600px);
 }
 
 .pravaStrana {
@@ -493,6 +597,16 @@ main p, main h2 {
 .pravaStrana img {
     max-width: min(100%,300px);
     margin: 0 auto;
+}
+
+@media (max-width: 1200px) {
+    .levaStrana-margin-prava {
+        margin-left: auto;
+    }
+
+    .levaStrana {
+        margin-right: auto;
+    }
 }
 
 /* footer */
@@ -655,10 +769,10 @@ hr {
 /* interImg */
 
 .interImg {
-    max-height: 800px;
+    max-height: 600px;
     overflow: hidden;
     z-index: -100;
-    margin: 5vw auto;
+    margin: 0 auto;
     display: flex;
     align-items: center;
 }
@@ -675,7 +789,7 @@ hr {
 /* center the blockquote in the page */
 .blockquote-wrapper {
     display: flex;
-    padding: 0 20px;
+    padding: 0;
  }
 
 /* Blockquote main style */
@@ -686,7 +800,7 @@ hr {
     color: rgba(107, 43, 0, 0.85);
     padding: 30px 0;
     width: 100%;
-    max-width: 80%;
+    max-width: 95%;
     z-index: 1;
     margin: 20px auto;
     align-self: center;
@@ -698,8 +812,8 @@ hr {
 .blockquote-maintext {
     position: relative;
     color: rgba(107, 43, 0, 0.85);
-    font-size: 8px;
-    line-height: 2.3rem;
+    font-size: 25px;
+    line-height: 1.8rem;
     margin: 0;
 }
 
@@ -718,11 +832,20 @@ hr {
 @media all and (min-width: 600px) {
     .blockquote p {
         font-size: 45px;
+        line-height: 2.3rem;
    }
 
    .blockquote-subheader {
         font-size: 35px !important;
    }
+
+   .blockquote {
+    max-width: 80%;
+   }
+
+   .blockquote-wrapper {
+    padding: 0  20px;
+ }
 
 }
 
@@ -736,4 +859,110 @@ hr {
     margin: 0;
     padding-top: 20px;
     z-index: 1;
+}
+
+/* infobox */
+
+.infobox {
+    min-height: 130px;
+    width: min(600px, 100%);
+    margin: 3rem auto;
+    -webkit-box-shadow: 2px 5px 16px 0px rgba(107, 43, 0, 0.2), 5px 5px 15px 5px rgba(0,0,0,0);
+    box-shadow: 2px 5px 16px 0px rgba(107, 43, 0, 0.3), 5px 5px 15px 5px rgba(0,0,0,0);
+    background: rgba(107, 43, 0, 0.2);
+    padding: 2rem 1.5rem;
+    display: flex;
+    gap: 20px;
+    align-content: center;
+ }
+
+ @media(max-width: 380px){
+    .infobox {
+        flex-wrap: wrap;
+    }
+
+    .infobox i {
+        margin: 0 auto;
+    }
+}
+
+ .infobox i {
+    font-size: 45px;
+    align-self: center;
+ }
+
+ /* logo a popis - např. bloky pro slevy */
+
+ .wrapper-bloky-logo-a-popis {
+    margin: 1rem auto;
+    max-width: min(1000px, 95%);
+    
+ }
+
+ .logo-a-popis {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+ }
+
+ .sleva-logo-obrazek{
+    width: 150px;
+ }
+
+ @media(max-width: 500px){
+    .logo-a-popis {
+        flex-wrap: wrap;
+        text-align: center;
+     }
+
+     .sleva-logo {
+        margin: 0 auto;
+     }
+    
+}
+
+/* články specifikace */
+
+.clanekTextBlok {
+    max-width: min(1000px, 95%);
+    margin: 2rem auto;
+}
+
+.clanekTextBlok h3 {
+    margin: 2rem 0;
+}
+
+.clanekTextBlok p {
+    margin: 1rem 0;
+}
+
+.container {
+    max-width: 1000px;
+    margin: 0 auto;
+}
+
+.clanekTextBlok ul{
+  margin-left: 1rem;
+}
+
+/* brown block */
+
+.brown-block {
+    background-color: rgba(179, 146, 122, 0.718);
+}
+
+.prispejte {
+    padding-top: 2em;
+    padding-bottom: 3em;
+}
+
+.brown-block h2, .brown-block p {
+    color: aliceblue;
+}
+
+.qr-kod {
+    max-width: min(200px,95%);
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
 }

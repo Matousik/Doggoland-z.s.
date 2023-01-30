@@ -43,12 +43,23 @@
             <div class="nav-links">
                 <ul>
                     <i class="fa-solid fa-angle-right" id="menuOffIcon"></i>
-                    <li><a href="kdojsme">kdo jsme?</a></li>
-                    <li><a href="jaktounaschodi">jak to u nás chodí?</a></li>
                     <li><a href="adopce">adopce</a></li>
-                    <li><a href="jakpomoci">jak pomoci</a></li>
-                    <li><a href="kontakt">kontakt</a></li>
-                    <li><a href="napsali-jsme">chcete vědět víc?</a></li>
+                    <li><a href="jaktounaschodi">jak to u nás chodí?</a></li>
+                    <li><a href="slevy">nákupy se slevou</a></li>
+                    <li>
+                        <a onclick="showDropdownMenu('dropdown-vice-informaci')" class="dropdown-a">
+                            Více informací 
+                        </a>
+                        <div id="dropdown-vice-informaci" class="dropdown-box">
+                            <a href="kdojsme">kdo jsme?</a>
+                            <a href="jakpomoci">jak pomoci?</a>
+                            <a href="kontakt">kontakt</a>
+                            <a href="napsali-jsme">chcete vědět víc?</a>
+                        </div>
+                    </li>
+                    <!--<li class="cervene-zvyrazneni">
+                        <a href="" class="transparentni-ucet-ref">Přispějte</a>
+                    </li>-->
                 </ul>
             </div>
             <i class="fa-solid fa-bars" id="menuIcon"></i>
@@ -85,7 +96,34 @@
         </div>
         <h2>Velké díky také patří našim sponzorům, mezi které patří:</h2>
         <div class="partnersGrid">
-
+            <div class="obrazekVlevo">
+                <div class="levaStrana">
+                    <img class="partnersVelkyObrazek" loading="lazy" src="pics/partneri/akinu-spoluprace.jpg" alt="">
+                </div>
+                <div class="pravaStrana">
+                    <a href="https://www.akinu.cz/" target="_blank"><img src="pics/partneri/akinu-logo.svg" alt=""></a>
+                    <div class="novinkyText">
+                        <p>Máme naprosto neuvěřitelnou novinku❤️!  Tento rok bude celá částka z prodaných Akinu <a href="https://www.akinu.cz/chovatelske-potreby/?q=%C4%8Dmuchac%C3%AD%20charitativn%C3%AD" target="_blank"><span class="underline brown hoverBackground">charitativních čmuchacích koberečků</span></a> a vánočních koulí darovaná našim pejskům a kočičkám 🎄😍!</p>
+                        <p>Charitativní čmuchačky jsou ručně dělané Akiňáky – lidmi z firmy Akinu.
+                            Jsou vyrobené s láskou pro pejsky a kočičky, kteří rádi hledají pamlsky. </p>
+                        <p>Charitativní čmuchačky už je možné zakoupit na <a href="https://www.akinu.cz/" target="_blank"><span class="underline brown hoverBackground">e-shopu</span></a> 🥰.</p>
+                    </div>
+                </div>
+            </div>
+                <div class="obrazekVpravo">
+                    <div class="pravaStrana">
+                        <a href="https://www.krmiva-pucalka.cz/" target="_blank"><img src="pics/partneri/pucalka-krmiva-logo.svg" alt="Pučálka logo"></a>
+                        <div class="novinkyText">
+                            <p>Máme skvělé zprávy. Podařilo se nám navázat spolupráci s českou firmou  <a href="https://www.krmiva-pucalka.cz/" target="_blank"><span class="underline brown hoverBackground">www.krmiva-pucalka.cz</span></a> ❤️🐾! </p>
+                            <p>Naši pejsci v dočaskách často přichází ve špatném stavu, krmeni nekvalitními granulemi ze supermarketů. Časté jsou u nich potom alergie, průjmy, špatná kvalita srsti a drápů. Proto jsme už několik měsíců zkoušeli různé druhy granulí. 
+                                Na doporučení jsme objednali MARP a už jsme u něj zůstali. U labíka Marlyho a malého Dastíka jsme měli s krmením velké problémy, ale potom, co jsme začali krmit Marpem, tak se vše srovnalo ❤️🎉.</p>
+                            <p>Pokud pejskům budete chtít poslat nějaké konzervy či krmení, tak můžete vybrat cokoliv z <a href="https://www.krmiva-pucalka.cz/" target="_blank"><span class="underline brown hoverBackground">www.krmiva-pucalka.cz</span></a>  ❤️🐶.</p>
+                        </div>
+                    </div>
+                    <div class="levaStrana-margin-prava">
+                        <img class="partnersVelkyObrazek" loading="lazy" src="pics/doby-marp.jpg" alt="Doby Marp">
+                    </div>
+                </div>
                 <div class="obrazekVlevo">
                     <div class="levaStrana">
                         <img class="partnersVelkyObrazek" loading="lazy" src="pics/partneri/zelenazeme.jpeg" alt="">
@@ -94,23 +132,23 @@
                         <a href="https://www.zelenazeme.cz/" target="_blank"><img src="pics/partneri/zelenazemelogo.webp" alt=""></a>
                         <div class="novinkyText">
                             <p>Nově jsme navázali spolupráci s firmou Zelená země. Nyní už zkoušíme účinky jejich <span class="bold">přírodních CBD produktů</span>, především u naší velmi komplikované fenečky Rosie a u pejska Grizz(l)yho a z výsledků jsme nadšeni.</p> 
-                            <p>Pro vás jsme domluvili <span class="bold">10% slevový kód "Doggoland"</span>, který platí na všechny produkty na webových stránkách <a href="https://www.zelenazeme.cz/" target="_blank"><span class="hover-underline-animation hoverBackground">www.zelenazeme.cz</span></a>.</p>
+                            <p>Pro vás jsme domluvili <span class="bold">10% slevový kód "Doggoland"</span>, který platí na všechny produkty na webových stránkách <a href="https://www.zelenazeme.cz/" target="_blank"><span class="underline brown hoverBackground">www.zelenazeme.cz</span></a>.</p>
                         </div>
                     </div>
                 </div>
-                <hr>
                 <div class="obrazekVpravo">
                     <div class="pravaStrana">
                         <a href="https://www.clickandfeed.cz/" target="_blank"><img src="pics/partneri/clickandfeed.png" alt=""></a>
                         <div class="novinkyText">
                             <p>Velmi nás těší, že spolupracujeme s projektem "Click and feed". <span class="bold">Díky tomuto projektu mají naši pejsci zdarma kvalitní krmení značky Brit.</span></p> 
-                            <p><span class="bold">Množství granulí, které dostaneme, závisí na vás.</span> Každý den můžete jednou "kliknout" na tomto odkazu <a href="https://www.clickandfeed.cz/" target="_blank"><span class="hover-underline-animation hoverBackground">www.clickandfeed.cz</span></a> na tlačítko "klikni zdarma a naplň misku" 💗. Každý klik se počítá, jednou měsíčně jsou totiž všechny naše "klikance" sečteny a podle počtu naplněných mističek firma Brit daruje jejich granulky do útulků/spolků, kteří jsou v tomto skvělém projektu také zapojeni.</p>
+                            <p><span class="bold">Množství granulí, které dostaneme, závisí na vás.</span> Každý den můžete jednou "kliknout" na tomto odkazu <a href="https://www.clickandfeed.cz/" target="_blank"><span class="underline brown hoverBackground">www.clickandfeed.cz</span></a> na tlačítko "klikni zdarma a naplň misku" 💗. Každý klik se počítá, jednou měsíčně jsou totiž všechny naše "klikance" sečteny a podle počtu naplněných mističek firma Brit daruje jejich granulky do útulků/spolků, kteří jsou v tomto skvělém projektu také zapojeni.</p>
                         </div>
                     </div>
-                    <div class="levaStrana">
+                    <div class="levaStrana-margin-prava">
                         <img class="partnersVelkyObrazek" loading="lazy" src="pics/partneri/CLICK AND FEED leták.jpg" alt="">
                     </div>
                 </div>
+                <hr>
             </div>
 
         </div>

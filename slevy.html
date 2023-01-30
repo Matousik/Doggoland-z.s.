@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="cs">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Pejsci k adopci dostupní na spolku Doggoland">
+    <meta name="author" content="Matouš Vondrák">
+
+    <!-- favicon -->
+
+    <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+    <link rel="manifest" href="/site.webmanifest">
+    <link rel="mask-icon" href="/safari-pinned-tab.svg" color="#5bbad5">
+    <meta name="msapplication-TileColor" content="#da532c">
+    <meta name="theme-color" content="#ffffff">
+    
+    <link rel="stylesheet" href="css/style.css"> 
+    <link rel="stylesheet" href="css/slevy.css">
+
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@100;200;300;400&display=swap" rel="stylesheet">
+
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+
+    <script src="https://kit.fontawesome.com/6f647d0fcb.js" crossorigin="anonymous"></script>
+
+    <!-- Gallery -->
+   
+    <link rel="stylesheet" href="css/gallery.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="js/gallery.js"></script>
+    
+    <title>Nákupy se slevou | Doggoland</title>
+</head>
+<body>
+    <section class="header">
+        <nav class="navigation">
+            <a href="https://doggoland.cz/" class="logo"><img src="pics/logo.png" alt="logo"></a>
+            <div class="nav-links">
+                <ul>
+                    <i class="fa-solid fa-angle-right" id="menuOffIcon"></i>
+                    <li><a href="adopce">adopce</a></li>
+                    <li><a href="jaktounaschodi">jak to u nás chodí?</a></li>
+                    <li><a href="slevy">nákupy se slevou</a></li>
+                    <li>
+                        <a onclick="showDropdownMenu('dropdown-vice-informaci')" class="dropdown-a">
+                            Více informací 
+                        </a>
+                        <div id="dropdown-vice-informaci" class="dropdown-box">
+                            <a href="kdojsme">kdo jsme?</a>
+                            <a href="jakpomoci">jak pomoci?</a>
+                            <a href="kontakt">kontakt</a>
+                            <a href="napsali-jsme">chcete vědět víc?</a>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+            <i class="fa-solid fa-bars" id="menuIcon"></i>
+        </nav>
+        <div class="titul">
+            <h1>Nákupy se slevou</h1>
+        </div>
+    </section>
+    <main>
+        <div class="clanekTextBlok">
+            <h2>Nakupovat a tím podpořit pejsky bez domova? To jde?</h2>
+            <p class="tc">Ano! Zde pro Vás máme seznam našich partnerů u kterých když nakoupíte s naším slevovým kódem, tak našim pejskům přihodí na účet buď peníze na krmení a veterinu, nebo nám pošlou výrobky, které od nich využíváme. V každém případě svým nákupem podpoříte dobrou věc. 😊</p>
+        </div>
+        <div class="wrapper-bloky-logo-a-popis">
+            <div class="logo-a-popis">
+                <div class="sleva-logo">
+                    <img class="sleva-logo-obrazek" loading="lazy" src="pics/partneri/zelenazemelogo.webp" alt="">
+                </div>
+                <div class="popis">
+                    <div class="novinkyText">
+                        <h4>Zelená Země</h3>
+                        <p>10% sleva na celý nákup | kód: <span class="bold">"DOGGOLAND"</span> | <a href="https://www.zelenazeme.cz/" target="_blank"><span class="underline brown hoverBackground">www.zelenazeme.cz</span></a></p>
+                        <p> Slevový kód platí na všechny produkty pro pejsky i lidi na webových stránkách <a href="https://www.zelenazeme.cz/" target="_blank"><span class="underline brown hoverBackground">www.zelenazeme.cz</span></a>. Naši dočaskový pejsci doporučují především CBD oleje (pro nemocné a psychicky labilní pejsky), konopný olej, šampon a  konopnou mastičku s měsíčkem lékařským na psí bebíčka. O našich zkušenostech s výrobky Zelené země se můžete dočíst v našem <a href="clanky/zelena-zeme"><span class="underline brown hoverBackground">speciálním článku</span></a>.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="logo-a-popis">
+                <div class="sleva-logo">
+                    <img class="sleva-logo-obrazek" loading="lazy" src="pics/partneri/vse-pro-pejska-logo.png" alt="">
+                </div>
+                <div class="popis">
+                    <div class="novinkyText">
+                        <h4>Vše pro pejska</h3>
+                            <p>15% sleva na nezlevněné zboží | kód: <span class="bold">"DOGGOLAND"</span> | <a href="https://www.vsepropejska.cz/" target="_blank"><span class="underline brown hoverBackground">www.vsepropejska.cz</span></a></p>
+                            <p> Misky, pelíšky, oblečky, hárací kalhotky, hračky, pásy do auta a mnoho dalších věcí najdete na stránkách <a href="https://www.vsepropejska.cz/" target="_blank"><span class="underline brown hoverBackground">www.vsepropejska.cz</span></a>.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </div>
+    </main>
+    <section class="footer">
+        <hr class="blackLine">
+        <div class="footerContainer">
+            <div class="mailATelefon">
+                <div class="icon">
+                    <i class="material-icons">mail</i>
+                    <p>    info@doggoland.cz</p>
+                </div>
+                <div class="icon">
+                    <i class="material-icons">local_phone</i>
+                    <p>    +420 739 071 777</p>
+                </div>
+                
+            </div>
+            <div class="socials">
+                <a href="#">
+                    <i class="fa-brands fa-facebook"></i>
+                </a>
+                <a href="">
+                    <i class="fa-brands fa-instagram"></i>
+                </a>
+                <a href="">
+                    <i class="fa-brands fa-tiktok"></i>
+                </a>
+            </div>
+        </div>
+        <p id="ja">© Matouš Vondrák</p>
+    </section>
+    <script type=text/javascript src="js/imagesloaded.pkgd.js"></script>
+    <script type=text/javascript src="js/masonry.pkgd.js"></script>
+    <script type=text/javascript src="js/base.js"></script>
+    <script type=text/javascript src="js/adopceGrid.js"></script>
+</body>
+</html>

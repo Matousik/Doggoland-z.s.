@@ -43,12 +43,20 @@
             <div class="nav-links">
                 <ul>
                     <i class="fa-solid fa-angle-right" id="menuOffIcon"></i>
-                    <li><a href="kdojsme">kdo jsme?</a></li>
-                    <li><a href="jaktounaschodi">jak to u nás chodí?</a></li>
                     <li><a href="adopce">adopce</a></li>
-                    <li><a href="jakpomoci">jak pomoci</a></li>
-                    <li><a href="kontakt">kontakt</a></li>
-                    <li><a href="napsali-jsme">chcete vědět víc?</a></li>
+                    <li><a href="jaktounaschodi">jak to u nás chodí?</a></li>
+                    <li><a href="slevy">nákupy se slevou</a></li>
+                    <li>
+                        <a onclick="showDropdownMenu('dropdown-vice-informaci')" class="dropdown-a">
+                            Více informací 
+                        </a>
+                        <div id="dropdown-vice-informaci" class="dropdown-box">
+                            <a href="kdojsme">kdo jsme?</a>
+                            <a href="jakpomoci">jak pomoci?</a>
+                            <a href="kontakt">kontakt</a>
+                            <a href="napsali-jsme">chcete vědět víc?</a>
+                        </div>
+                    </li>
                 </ul>
             </div>
             <i class="fa-solid fa-bars" id="menuIcon"></i>
@@ -59,6 +67,24 @@
     </section>
     <main>
         <div class="clankyGrid">
+            <div class="jedenClanek">
+                <div class="jedenClanekThumb">
+                    <img src="pics/clanky/paddleboard/paddleboard-stin.png" loading="lazy" alt="Paddleboarding">
+                </div>
+                <div class="jedenClanekSummary">
+                    <a href="clanky/paddleboarding-se-psem"><span class="underline brown nadpisClanku">Paddleboarding se psem</span></a> <br>
+                    <span class="whenPosted">15. října 2022</span>
+                </div>
+            </div>
+            <div class="jedenClanek">
+                <div class="jedenClanekThumb">
+                    <img src="pics/clanky/barf-miska-thumb.jpg" loading="lazy" alt="Barf miska s jídlem">
+                </div>
+                <div class="jedenClanekSummary">
+                    <a href="clanky/co-je-to-barf-a-proc-krmit-barfem"><span class="underline brown nadpisClanku">Co je to BARF? A proč krmit BARFem?</span></a> <br>
+                    <span class="whenPosted">10. října 2022</span>
+                </div>
+            </div>
             <div class="jedenClanek">
                 <div class="jedenClanekThumb">
                     <img src="pics/clanky/zelena-zeme-uvod.jpg" loading="lazy" alt="zelená země grizzy">

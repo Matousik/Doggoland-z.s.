@@ -43,12 +43,20 @@
             <div class="nav-links">
                 <ul>
                     <i class="fa-solid fa-angle-right" id="menuOffIcon"></i>
-                    <li><a href="kdojsme">kdo jsme?</a></li>
-                    <li><a href="jaktounaschodi">jak to u nás chodí?</a></li>
                     <li><a href="adopce">adopce</a></li>
-                    <li><a href="jakpomoci">jak pomoci</a></li>
-                    <li><a href="kontakt">kontakt</a></li>
-                    <li><a href="napsali-jsme">chcete vědět víc?</a></li>
+                    <li><a href="jaktounaschodi">jak to u nás chodí?</a></li>
+                    <li><a href="slevy">nákupy se slevou</a></li>
+                    <li>
+                        <a onclick="showDropdownMenu('dropdown-vice-informaci')" class="dropdown-a">
+                            Více informací
+                        </a>
+                        <div id="dropdown-vice-informaci" class="dropdown-box">
+                            <a href="kdojsme">kdo jsme?</a>
+                            <a href="jakpomoci">jak pomoci?</a>
+                            <a href="kontakt">kontakt</a>
+                            <a href="napsali-jsme">chcete vědět víc?</a>
+                        </div>
+                    </li>
                 </ul>
             </div>
             <i class="fa-solid fa-bars" id="menuIcon"></i>
@@ -58,34 +66,52 @@
             <hr>
             <p>Psi jsou jako brambůrky - jedna nikdy nestačí</p>
         </div>
+        <div class="titul-vyber-tlacitek">
+            <a href="adopce"><button class="svetlejsi-tlacitko">Chci adoptovat</button></a>
+            <a href="jakpomoci"><button class="svetlejsi-tlacitko">Chci pomoci</button></a>
+            <a href="slevy"><button class="svetlejsi-tlacitko">Nákupy se slevou</button></a>
+        </div>
     </section>
     <main>
-        <h2>Vítejte na našich stránkách</h2>
-        <p>Jsme tým psích nadšenců se spoustou zkušeností z různých psích útulků či spolků. V každém z nich jsme však narazili na nějaký háček. Jelikož pomáháme opuštěným zvířátkům z našeho vlastního přesvědčení a v té nejlepší víře, rozhodli jsme se tyto nedostatky vyladit tím, že založíme vlastní spolek.</p> 
-        <p>Dříve jsme se setkávali s tím, že se o pejsky staraly dobré, ale bohužel velmi nezkušené duše, což u pejsků ze špatných podmínek může mít fatální následky. Náš nový spolek je stále v zárodku, ovšem už nyní máme jasnou představu o tom, co chceme dělat a jak. </p> 
+        <h2>Vítejte v Doggolandu!</h2>
+        <p>Vítejte v našem malém psím světe, kde léčíme nemocné psí duše. Pomáháme pejskům, kterých se ostatní zbavili. Často u nás potkáte pejsky dříve týrané, psychicky zlomené či hodně nemocné. Každý den jim ukazujeme, že ne všichni lidé jsou zlí a že už se není čeho bát.</p> 
+        <p>Pejsci i kočičky s námi bydlí doma u našich dočasných tet. Jsou součástí našich rodin, nikoliv jen obyvatelem studeného kotce, na kterém je evidenční číslo.</p> 
+        <p>V naší péči pejskové projdou kompletním veterinárním vyšetřením, řádnou socializací (návštěvy města, auto, rodinné oslavy) a základním výcvikem tak, aby do domova odcházeli jako bezpečně ovladatelní, spokojení a vyrovnaní psí parťáci.</p> 
+        <p>Více o naší práci a o tom, jak to u nás chodí, najdete v záložce <a href="jaktounaschodi"><span class="underline brown hoverBackground">"Jak to u nás chodí".</span></a></p>
         
-        <div class="separatorRight"></div>
+        <!--<div class="separatorRight"></div>-->
+        <div class="brown-block">
+            <div class="prispejte">
+                <h2>Přispějte</h2>
+                <p>Pomozte nám zachránit více pejsků a kočiček! Snažíme se pro naše svěřence dělat maximum, ale bez dostatku financí na veterinární péči, krmení, a další potřebné věci pro pejsky to nezvládneme. Pomoci nám můžete příspěvkem na náš transparentní účet č. 2302170901/2010. Každá koruna se počítá!</p>
+                <img class="qr-kod tc" src="pics/qr-kod-500.png" alt="QR kód">
+            </div>
+        </div>
         <div class="interImg">
             
             <img src="pics/chillicut.jpg" loading="lazy" alt="">
             
         </div>
-        <div class="separatorLeft"></div>
+        <!--<div class="separatorLeft"></div>-->
         
-        <p>V naší péči pejskové projdou kompletním veterinárním vyšetřením, řádnou socializací a základním výcvikem tak, aby do domova odcházeli jako bezpečně ovladatelní, spokojení a vyrovnaní jedinci.</p> 
-        <p>Z našich zkušeností moc dobře víme, že ne vždy je to procházka růžovým sadem, ale jsme pevně rozhodnutí dělat pro naše svěřence maximum. Zároveň se jako tým chceme dále vzdělávat v oblasti kynologie a především výživě zvířat a péči o pejsky i kočičky.</p> 
-        <p>Více o naší práci a o tom, jak to u nás chodí najdete v záložce <a href="jakpomoci"><span class="underline brown hoverBackground">"Jak to u nás chodí".</span></a></p>
+        
         <hr>
         <h2>Novinky</h2>
+        <div class="clanekTextBlok hidden">
+            <h3>Nadační fond</h3>
+            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Libero, quae id. Expedita laboriosam distinctio veritatis, ducimus fugit consectetur ratione corporis voluptates a sed laudantium quo!</p>
+        </div>
         <div class="novinky">
             <div class="levaStrana">
-                <img src="pics/partneri/zelenazeme.jpeg" loading="lazy" alt="">
+                <img src="pics/partneri/akinu-spoluprace.jpg" loading="lazy" alt="Akinu">
             </div>
             <div class="pravaStrana">
-                <a href="https://www.zelenazeme.cz/" target="_blank"><img src="pics/partneri/zelenazemelogo.webp" alt=""></a>
+                <a href="https://www.akinu.cz/" target="_blank"><img src="pics/partneri/akinu-logo.svg" alt=""></a>
                 <div class="novinkyText">
-                    <p>Nově jsme navázali spolupráci s firmou Zelená země. Nyní už zkoušíme účinky jejich <span class="bold">přírodních CBD produktů</span>, především u naší velmi komplikované fenečky Rosie a u pejska Grizz(l)yho a z výsledků jsme nadšeni.</p> 
-                    <p>Pro Vás jsme domluvili <span class="bold">10% slevový kód "Doggoland"</span>, který platí na všechny produkty na webových stránkách <a href="https://www.zelenazeme.cz/" target="_blank"><span class="underline brown hoverBackground">www.zelenazeme.cz</span></a>.</p>
+                    <p>Máme naprosto neuvěřitelnou novinku❤️!  Tento rok bude celá částka z prodaných Akinu <a href="https://www.akinu.cz/chovatelske-potreby/?q=%C4%8Dmuchac%C3%AD%20charitativn%C3%AD" target="_blank"><span class="underline brown hoverBackground">charitativních čmuchacích koberečků</span></a> a vánočních koulí darovaná našim pejskům a kočičkám 🎄😍!</p>
+                    <p>Charitativní čmuchačky jsou ručně dělané Akiňáky – lidmi z firmy Akinu.
+                        Jsou vyrobené s láskou pro pejsky a kočičky, kteří rádi hledají pamlsky. </p>
+                    <p>Charitativní čmuchačky už je možné zakoupit na <a href="https://www.akinu.cz/" target="_blank"><span class="underline brown hoverBackground">e-shopu</span></a> 🥰.</p>
                 </div>
             </div>
         </div>
@@ -94,20 +120,29 @@
         <div class="clankyGrid">
             <div class="jedenClanek">
                 <div class="jedenClanekThumb">
+                    <img src="pics/clanky/paddleboard/paddleboard-stin.png" loading="lazy" alt="Paddleboarding">
+                </div>
+                <div class="jedenClanekSummary">
+                    <a href="clanky/paddleboarding-se-psem"><span class="underline brown nadpisClanku">Paddleboarding se psem</span></a> <br>
+                    <span class="whenPosted">15. října 2022</span>
+                </div>
+            </div>
+            <div class="jedenClanek">
+                <div class="jedenClanekThumb">
+                    <img src="pics/clanky/barf-miska-thumb.jpg" loading="lazy" alt="Barf miska s jídlem">
+                </div>
+                <div class="jedenClanekSummary">
+                    <a href="clanky/co-je-to-barf-a-proc-krmit-barfem"><span class="underline brown nadpisClanku">Co je to BARF? A proč krmit BARFem?</span></a> <br>
+                    <span class="whenPosted">10. října 2022</span>
+                </div>
+            </div>
+            <div class="jedenClanek">
+                <div class="jedenClanekThumb">
                     <img src="pics/clanky/zelena-zeme-uvod.jpg" loading="lazy" alt="zelená země grizzy">
                 </div>
                 <div class="jedenClanekSummary">
                     <a href="clanky/zelena-zeme"><span class="underline brown nadpisClanku">CBD oleje pro psy</span></a> <br>
                     <span class="whenPosted">4. srpna 2022</span>
-                </div>
-            </div>
-            <div class="jedenClanek">
-                <div class="jedenClanekThumb">
-                    <img src="pics/grizzly-stuzka-thumb.jpg" loading="lazy" alt="grizzy zelená stužka">
-                </div>
-                <div class="jedenClanekSummary">
-                    <a href="clanky/zluta-stuzka"><span class="underline brown nadpisClanku">Co znamená žlutá stužka?</span></a> <br>
-                    <span class="whenPosted">4. dubna 2022</span>
                 </div>
             </div>
         </div>
